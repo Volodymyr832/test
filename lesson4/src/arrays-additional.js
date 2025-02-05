@@ -28,3 +28,5 @@ console.log("Squared numbers:", squaredNumbers);
 
 const spreadCombined = [...numbers, ...extraNumbers];
 console.log("Spread combined array:", spreadCombined);
+
+//
