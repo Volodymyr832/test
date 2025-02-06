@@ -20,7 +20,7 @@ const joinedNumbers = numbers.join(", ");
 console.log("Joined numbers:", joinedNumbers);
 
 numbers.forEach((num, index) => {
-  console.log(`Index ${index}: ${num}`);
+    console.log(`Index ${index}: ${num}`);
 });
 
 const squaredNumbers = numbers.map((num) => num ** 2);
