@@ -17,7 +17,7 @@ function fetchData(url) {
 }
 
 function processData(data) {
-    console.log("Processing data:", data.slice(0, 3)); 
+    console.log("Processing data:", data.slice(0, 3));
 }
 
 fetchData("https://jsonplaceholder.typicode.com/posts");

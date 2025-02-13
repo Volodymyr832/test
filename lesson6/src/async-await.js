@@ -20,7 +20,7 @@ async function fetchDataAsync(url) {
 
 
 function processData(data) {
-    console.log("Processing data:", data.slice(0, 3)); 
+    console.log("Processing data:", data.slice(0, 3));
 }
 
 
