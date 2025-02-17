@@ -33,4 +33,15 @@ async function fetchWithFallback(primaryUrl, fallbackUrl) {
     }
 }
 
-fetchWithFallback("https://example.com/nonexistent", "https://jsonplaceholder.typicode.com/posts");
+(async () => {
+    try {
+        const data = await fetchWithFallback(
+            "https://example.com/nonexistent",
+            "https://jsonplaceholder.typicode.com/posts"
+        );
+        console.log("Final data received:", data);
+    } catch (error) {
+        console.error("Failed to fetch data:", error.message);
+    }
+})();
+

@@ -11,7 +11,6 @@ function fetchData(url) {
         .then(data => {
             console.log("Data received:", data);
             processData(data);
-            return data;
         })
         .catch(error => console.error("Error fetching data:", error));
 }

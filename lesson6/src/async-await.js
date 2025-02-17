@@ -24,4 +24,6 @@ function processData(data) {
 }
 
 
-fetchDataAsync("https://jsonplaceholder.typicode.com/posts");
+(async () => {
+    await fetchDataAsync("https://jsonplaceholder.typicode.com/posts");
+})();
