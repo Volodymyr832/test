@@ -12,3 +12,4 @@ const numberArray: number[] = [1, 2, 3, 4, 5];
 
 console.log('Sum of numbers in numberArray:', sumArray(numberArray));
 console.log('Sum of elements in stringArray:', sumArray(stringArray));
+
