@@ -1,21 +1,20 @@
-# Lesson 7 - TS Basics
+# Lesson 8 - TS Types. Interfaces. Classes
 
 ## This lesson covers the following topics:
 
-1. **What is TypeScript**
-2. **How to add it to the nodejs project**
-3. **ESLint configuration**
-4. **Compilation using tsc**
-5. **Running ts using ts-node**
-6. **var and function typing**
-7. **some new types**
+1. **What is Type**
+2. **What is Interface**
+3. **Interface usage for typing**
+4. **What is class**
+5. **Class usage for typing**
+6. **Abstract Class**
+7. **Static classes and static class properties**
 
 ## How to Run the Code
 
 To run the code, follow these steps:
 
 1. Install the necessary dependencies:
-
     ```sh
     npm install
     ```
