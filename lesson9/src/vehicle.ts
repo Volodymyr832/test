@@ -1,10 +1,5 @@
-import { IVehicle } from './interfaces';
-
-export abstract class Vehicle implements IVehicle {
-    constructor(
-        public name: string,
-        public speed: number
-    ) {}
+export abstract class Vehicle {
+    constructor(public name: string, public speed: number) {}
 
     abstract move(): void;
 

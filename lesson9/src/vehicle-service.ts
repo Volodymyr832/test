@@ -1,6 +1,6 @@
-import { IVehicle } from './interfaces';
+import { Vehicle } from './vehicle';
 
-export function useVehicle(vehicle: IVehicle): void {
+export function useVehicle(vehicle: Vehicle): void {
     vehicle.move();
     vehicle.stop();
 }

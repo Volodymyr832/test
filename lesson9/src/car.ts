@@ -1,11 +1,18 @@
 import { Vehicle } from './vehicle';
+import { IMotorVehicle } from './motor-vehicle';
 
-export class Car extends Vehicle {
+export class Car extends Vehicle implements IMotorVehicle {
     private fuel: number;
+    private engineCapacity: number;
 
-    constructor(name: string, speed: number, fuel: number) {
+    constructor(name: string, speed: number, fuel: number, engineCapacity: number) {
         super(name, speed);
         this.fuel = fuel;
+        this.engineCapacity = engineCapacity;
+    }
+
+    getEngineCapacity(): number {
+        return this.engineCapacity;
     }
 
     move(): void {
@@ -13,7 +20,7 @@ export class Car extends Vehicle {
             console.log(`${this.name} is driving at ${this.speed} km/h.`);
             this.fuel--;
         } else {
-            console.log(`${this.name} cannot drive — no fuel.`);
+            throw new Error(`${this.name} cannot drive — no fuel.`);
         }
     }
 
