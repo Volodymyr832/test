@@ -1,0 +1,1 @@
+{"root":["./src/bicycle.ts","./src/car.ts","./src/index.ts","./src/interfaces.ts","./src/vehicle-service.ts","./src/vehicle.ts","./test/jest/bjectFunctions.spec.ts","./test/mocha/bicycle.spec.ts","./test/mocha/car.spec.ts","./test/mocha/vehicleService.spec.ts"],"errors":true,"version":"5.8.2"}
