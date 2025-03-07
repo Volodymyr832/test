@@ -1,13 +1,17 @@
 import { useVehicle } from '../../src/vehicle-service';
-import { IVehicle } from '../../src/interfaces';
+import { IVehicle } from '../../src/interfaces.js';
 
 describe('VehicleService', () => {
-    const mockVehicle = {
-        name: 'TestVehicle',
-        speed: 50,
-        move: jest.fn(() => 'TestVehicle is moving.'),
-        stop: jest.fn(() => 'TestVehicle has stopped.')
-    } as unknown as IVehicle;
+    let mockVehicle: IVehicle;
+
+    beforeEach(() => {
+        mockVehicle = {
+            name: 'TestVehicle',
+            speed: 50,
+            move: jest.fn(() => 'TestVehicle is moving.'),
+            stop: jest.fn(() => 'TestVehicle has stopped.')
+        };
+    });
 
     it('should call move and stop methods', () => {
         const result = useVehicle(mockVehicle);
