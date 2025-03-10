@@ -1,0 +1,35 @@
+{
+    "name": "lesson13",
+    "version": "1.0.0",
+    "description": "Integration and Contract tests for thecatapi & petstore.swagger.io",
+    "type": "module",
+    "scripts": {
+      "lint": "eslint src/ --ext .ts",
+      "lint:fix": "eslint src/ --ext .ts --fix",
+      "build": "npm run lint && tsc",
+      "test:integration": "node --import tsx ./node_modules/mocha/bin/mocha.js test/integration/**/*.spec.ts",
+      "test": "npm run test:integration && npm run test:contract",
+      "test:contract:consumer": "node --import tsx ./node_modules/mocha/bin/mocha.js test/contract/pet-consumer.spec.ts",
+      "test:contract:provider": "node --import tsx ./node_modules/mocha/bin/mocha.js test/contract/pet-provider.spec.ts",
+      "test:contract": "npm run test:contract:consumer && npm run test:contract:provider"
+    },
+    "dependencies": {
+      "@pact-foundation/pact": "^14.0.0",
+      "axios": "^1.6.5",
+      "cross-env": "^7.0.3",
+      "form-data": "^4.0.0"
+    },
+    "devDependencies": {
+      "@eslint/js": "^9.19.0",
+      "@types/chai": "^5.0.1",
+      "@types/mocha": "^10.0.10",
+      "@types/node": "^22.13.5",
+      "chai": "^5.2.0",
+      "eslint": "^9.19.0",
+      "mocha": "^11.1.0",
+      "prettier": "^3.4.2",
+      "tsx": "^4.19.3",
+      "typescript": "^5.7.3"
+    }
+  }
+  
