@@ -39,6 +39,12 @@ describe('Integration Test: Images, Votes, Favourites', function () {
   
     expect(found).to.exist;
     expect(found!.image_id).to.equal(uploadedImage.id);
+    //added
+    try {
+      await favouriteService.addFavourite('nonexistent-id');
+    } catch (error: any) {
+      expect(error.response.status).to.equal(400);
+    }
   });
   
 
