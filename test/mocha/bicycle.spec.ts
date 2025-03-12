@@ -1,33 +1,19 @@
 import { expect } from 'chai';
-import sinon from 'sinon';
 import { Bicycle } from '../../src/bicycle.js';
 
 describe('Bicycle Class', () => {
     let bicycle: Bicycle;
-    let moveSpy: sinon.SinonSpy;
-    let stopSpy: sinon.SinonSpy;
 
     beforeEach(() => {
         bicycle = new Bicycle('Giant', 20);
-        moveSpy = sinon.spy(bicycle, 'move');
-        stopSpy = sinon.spy(bicycle, 'stop');
-    });
-
-    afterEach(() => {
-        moveSpy.restore();
-        stopSpy.restore();
     });
 
     it('should move correctly', () => {
-        const result = bicycle.move();
-        expect(result).to.equal('Giant is moving at 20 km/h using pedals.');
-        expect(moveSpy.calledOnce).to.be.true;
+        expect(bicycle.move()).to.equal('Giant is moving at 20 km/h using pedals.');
     });
 
     it('should stop correctly', () => {
-        const result = bicycle.stop();
-        expect(result).to.equal('Giant has stopped.');
-        expect(stopSpy.calledOnce).to.be.true;
+        expect(bicycle.stop()).to.equal('Giant has stopped.');
     });
 
     it('should increase speed', () => {
