@@ -1,4 +1,11 @@
 {
+<<<<<<< HEAD
+  "devDependencies": {
+    "@types/sinon": "^17.0.4",
+    "sinon": "^19.0.2",
+    "vitest": "^3.0.7"
+  }
+=======
     "name": "lesson11",
     "version": "1.0.0",
     "description": "Unit tests using Mocha, Sinon, and Jest",
@@ -35,4 +42,5 @@
         "typescript": "^5.7.3",
         "prettier": "^3.5.2"
     }
+>>>>>>> eb0f544e733415fb012943a9c57b0e65352dc5a4
 }
