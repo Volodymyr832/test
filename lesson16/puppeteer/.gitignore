@@ -1,0 +1,16 @@
+node_modules
+dist
+build
+*.log
+.DS_Store
+uploads/
+
+node_modules/
+lesson4/
+lesson5/
+lesson6/
+lesson7/
+lesson8/
+lesson9/
+lesson10/
+lesson11/
