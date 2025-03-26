@@ -1,8 +1,10 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
     "lib": ["es6", "dom"],
+    "types": ["jest", "node"],
     "moduleResolution": "Node",
     "outDir": "./dist",
     "rootDir": "./src",
@@ -18,6 +20,6 @@
     },
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src", "test", "puppeteer/e2e/Puppeteer.test.ts", "cypress/e2e/rozetka.cy.ts"],
+  "include": ["**/*.ts", "../cypress.config.ts"],
   "exclude": ["node_modules", "dist"]
 }

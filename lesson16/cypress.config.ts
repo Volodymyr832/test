@@ -7,7 +7,6 @@ export default defineConfig({
         },
         specPattern: 'cypress/e2e/**/*.cy.{js,ts}',
         supportFile: false,
-        baseUrl: 'https://rozetka.com.ua',
         viewportWidth: 1200,
         viewportHeight: 800,
         defaultCommandTimeout: 10000
