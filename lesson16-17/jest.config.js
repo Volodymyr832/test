@@ -4,12 +4,11 @@ module.exports = {
     testEnvironment: 'node',
     testMatch: ['**/puppeteer/**/*.test.ts'],
     transform: {
-      '^.+\\.ts$': 'ts-jest',
+        '^.+\\.ts$': 'ts-jest'
     },
     globals: {
-      'ts-jest': {
-        tsconfig: 'tsconfig.json',
-      },
-    },
-  };
-  
+        'ts-jest': {
+            tsconfig: 'tsconfig.json'
+        }
+    }
+};
