@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["es6", "dom"],
+    "moduleResolution": "Node",
+    "types": ["node", "webdriverio/async", "mocha"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "moduleDetection": "force",
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src", "test", "puppeteer/e2e/Puppeteer.test.ts", "cypress/e2e/rozetka.cy.ts"],
+  "exclude": ["node_modules", "dist"]
+}
