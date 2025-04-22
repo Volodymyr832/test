@@ -1,0 +1,17 @@
+# Playwright
+/test-results/
+/playwright-report/
+
+# Node
+/node_modules/
+dist/
+*.log
+
+# Mac
+.DS_Store
+
+# Reports
+*.csv
+*.html
+*.json
+/xray.config.ts/
