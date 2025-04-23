@@ -7,8 +7,8 @@ export default defineConfig({
     timeout: 10 * 1000,
   },
   use: {
-    headless: false,
-    baseURL: 'http://localhost:6008',
+    headless: true,
+    baseURL: process.env.BASE_URL || 'http://localhost:3000',
     viewport: {width: 1280, height: 720},
     trace: 'on-first-retry',
     actionTimeout: 10 * 1000,
@@ -24,7 +24,7 @@ export default defineConfig({
   reporter: [
     ['list'],
     ['html', {outputFolder: 'playwright-report'}],
-    ['playwright-xray', xrayConfig],
+    //['playwright-xray', xrayConfig],
   ],
-  workers: 3,
+  workers: 1,
 });

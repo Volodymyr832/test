@@ -1,7 +1,8 @@
 import {test, expect} from '@playwright/test';
 import {TagGroupPage} from './tag.page';
-import {openStory} from '../../../automation-test/utils/storybook';
-import {storyPaths} from '../../../automation-test/utils/storyPaths';
+import {openStory} from '../../utils/storybook';
+import {storyPaths} from '../../utils/storyPaths';
+
 
 test.describe('Tag Functional Tests', () => {
   test.describe('In Tag Group', () => {
